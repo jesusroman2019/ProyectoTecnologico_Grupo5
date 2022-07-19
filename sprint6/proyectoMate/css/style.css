@@ -1,0 +1,268 @@
+@import url('https: //fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Chicle', cursive;
+  background-color: #ffffff;
+  /* background-image: url("fondo.jpg"); */
+}
+
+header{
+  background: #40DFEF;
+}
+
+.container{
+  width: 95%;
+  margin: auto;
+}
+
+.nav{
+  overflow: hidden;
+  background:#40DFEF;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.nav h2{
+  font-size: 2rem;
+  float: left;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  font-size: 1.3rem;
+  margin-top: 5px;
+  float: left;
+  padding: 0 15px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.current a::after{
+  content: '-';
+  font-size: 4px;
+  background-color: white;
+  display: block;
+}
+
+.wrapper{
+  /* display: grid; */
+  grid-template-columns: 82% 18%;
+}
+
+.equation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+  font-size: 5.2vw;
+  background: #FFFBE7;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px 10px 10px 10px;  
+  background-image: url(fondo1.jpg);
+  background-size: 100%;  
+  /* opacity: 100%; */  
+}
+
+.equation-numbers{
+  display: flex;
+  /* align-items: flex-start;     */
+}
+
+.score{
+  font-size: 30%;
+}
+
+.cuantoEs{
+  font-size: 30%;
+  margin-top: 50px;
+  color: rgb(31, 187, 59);
+  padding-bottom: 0px;
+}
+
+.messageSize{
+  font-size: 1vw;
+  color: #2f2f2f;   
+}
+
+.time{
+  font-size: 50%;
+  color: #717171;
+}
+
+button {
+  width: 100px;
+  height: 60px;
+  /* border: 3px soldi white; */
+  border-radius: 50px;
+  border-style: none;
+  background: #aa5fff;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  margin: 3px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+}
+
+
+#buttons {
+  display: flex; 
+  padding-left: 0px;  
+
+}
+
+#mensaje{
+  display: none;
+}
+
+.equation h1{
+  display: inline;
+  padding: 20px;  
+}
+
+.answer-options{
+  display: flex;  
+  /* align-items: flex-end; */
+  font-size: 2vw;
+  margin-right: 10px;
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 40px 10px 10px 10px;
+  color: #fff;
+  transition: 2s;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+  width: 100px;
+  height: 100px;
+}
+
+.titulo{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #2f2f2f;
+}
+
+.parent{
+  text-align: center;
+}
+
+.card{
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerCard{
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+}
+
+.containerCard h3{
+  text-align: center;
+  
+}
+
+.containerCard h3 a:link {
+  color: rgb(63, 63, 63);
+  text-decoration: none;
+    
+}
+
+.containerCard h3 a:visited {
+  color: rgb(0, 166, 72);
+  text-decoration: none;
+}
+
+form .error {
+  color: #ff0000;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.promedio {
+  font-size: 4em;
+}
+
+#btnRegistrar {
+  float: right;
+}
+
+#btnRegistrar1 {
+  float: right;
+}
+
+#registro {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  padding-bottom: 80px;
+  background-color: #fff;
+}
+
+
+@media(max-width:768px){
+  .nav h2{
+    font-size: 1.5rem;
+    float: none;
+    text-align: center;
+  }
+
+  nav{
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:480px){
+  .nav h2{
+    float: none;
+    text-align: center;
+  }
+
+  .equation h1{
+    display: inline;
+    padding: 10px;
+  } 
+
+  nav li{
+    font-size: .8rem;
+  }
+   
+}
+
+
+
+
+
